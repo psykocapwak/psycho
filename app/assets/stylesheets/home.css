@@ -110,3 +110,32 @@ img {
    padding : 5px;
    border : solid 1px #444444;
 }
+
+ul li{
+  list-style-type: none;
+}
+
+/** Navigation **/
+nav {
+	height: 40px;
+	list-style-type: none;
+	margin: 0;
+	padding: 8px 20px 12px 0;
+}
+nav li {
+	float: left;
+	font-family: 'CorbenBold';
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 40px;
+	width: 186px;
+	text-align: center;
+}
+nav a {
+	color: #9d7912;
+	text-decoration: none;
+}
+nav a:hover, nav li.selected a {
+	color: #f9f9f5;
+	text-shadow: 1px 1px 0 #a8840b;
+}
