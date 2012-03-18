@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Psycho</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="HakimAndGeoSupinfoProject">
+  <meta name="description" content="<%= yield(:meta_description)%>">
+  <meta http-equiv="content-language" content="<%= I18n.locale.to_s%>">
+  <title><%= content_for?(:title) ? yield(:title) : "Psykocapwak" %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li>
+        Simple
+      </li>
+      <li>
+        Swim
+      </li>
+      <li>
+        Cat
+      </li>
+    </ul>
+  </nav>
+  <div id="container">
+    <%flash.each do |name, msg| %>
+           <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <%end%>
+  
+    <%if content_for?(:title) %>
+      <h1><%= yield(:title) %></h1>
+    <%end%>
+  
+    <%= yield %>
+  </div>
 
-<%= yield %>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30134645-1']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </body>
 </html>
