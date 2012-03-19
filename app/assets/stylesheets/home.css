@@ -79,9 +79,9 @@ a {
   font-size: 12px;
   list-style: disc;
 }
-
+*/
 figure {
-   width : 332px;
+   width : 304px;
    padding : 6px;
    background : white; 
    margin : 0 11px 0px 0;
@@ -110,7 +110,7 @@ img {
    padding : 5px;
    border : solid 1px #444444;
 }
-
+/*
 ul li{
   list-style-type: none;
 }
