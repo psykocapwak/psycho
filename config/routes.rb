@@ -48,6 +48,10 @@ Psycho::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
+  get '/psykocapwak/simple-cap' => 'home#simple_cap', :as=>:simple_cap
+  get '/psykocapwak/swim-cap' => 'home#swim_cap', :as=>:swim_cap
+  get '/psykocapwak/cat-cap' => 'home#cat_cap', :as=>:cat_cap
+  
   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"

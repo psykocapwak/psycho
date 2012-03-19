@@ -1,17 +1,31 @@
 <% provide :title, "Psykocapwak" %>
 <% content_for(:meta_description, "Psykocapwak kesako? C'est une super casquette révolutionnaire qui donne à celui qui le porte des supers pouvoirs")%>
-<h2>Simple cap</h2>
-  <figure>
-    <%= image_tag asset_path("duckhat.jpg")%>
-    <figcaption>Un chapeau de canard avec la magie de <strong>psykocapwak</strong></figcaption>
-  </figure>
-<h2>Swim cap</h2>
-  <figure>
-    <%= image_tag asset_path("duckhatwatter.jpeg")%>
-    <figcaption>Un chapeau résistant à l'eau de canard avec la magie de <strong>psykocapwak</strong></figcaption>
-  </figure>
-<h2>Cat Cap</h2>
-  <figure>
-    <%= image_tag asset_path("cathat.jpeg")%>
-    <figcaption>Un chapeau de chat avec la magie de <strong>psykocapwak</strong></figcaption>
-  </figure>
+<div class="span8 intro-index">
+  Grande nouvelle!!! <strong>Psykocapwak</strong> corporation vous fait découvrir trois nouvelles casquettes vous apportant pouvoirs magiques et autres moment de bonheur !
+  La qualité et l'innovation de <strong>Psykocapwak</strong> n'est plus à démontrer, en effet au fil des années des succès comme la casquette en pot de fesse de chameau vous apportant le pouvoir d'omettre de boire pendant plus de 5 ans a fait la popularité de notre marque <strong>Psykocapwak</strong>.
+  Cepedant c'est de tout autre produit que nous vous présentons aujourd'hui.
+  Alors laissez vous envouter par la magie de <strong>Psykocapwak</strong> et plongez avec nous au pays des merveilles !
+</div>
+<section class="home-section">
+  <article class="span5">
+    <h2>Simple cap</h2>
+      <figure>
+        <%= image_tag asset_path("duckhat.jpg")%>
+        <figcaption>Un chapeau de canard avec la magie de <strong>psykocapwak</strong></figcaption>
+      </figure>
+  </article>
+  <article class="span3">
+  <h2>Swim cap</h2>
+    <figure>
+      <%= image_tag asset_path("duckhatwatter.jpeg")%>
+      <figcaption>Un chapeau résistant à l'eau de canard avec la magie de <strong>psykocapwak</strong></figcaption>
+    </figure>
+  </article>
+  <article class="span9">
+  <h2>Cat Cap</h2>
+    <figure>
+      <%= image_tag asset_path("cathat.jpeg")%>
+      <figcaption>Un chapeau de chat avec la magie de <strong>psykocapwak</strong></figcaption>
+    </figure>
+  </article>
+</section>
